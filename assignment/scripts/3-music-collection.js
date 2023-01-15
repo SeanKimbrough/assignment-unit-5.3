@@ -36,6 +36,12 @@ console.log('Added The Colour of Love', Collection[5]);//Test 6 Worked
 
 console.log('Full Album Collection:' , Collection);// function worked in console. 6 albums added to array
 
+function showFullCollection (array) {
+    for (let i=0; i< array.length; i++){
+        console.log(`${array[i].title} by ${array[i].artist}, publishes in ${array[i].yearPublished}`);
+    }
+};
+//End of creating Function showFullCollection 
 
 
 
