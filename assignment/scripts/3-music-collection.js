@@ -34,5 +34,9 @@ console.log('Added The Colour of Love', Collection[5]);//Test 6 Worked
 
 //Finished adding Albums to Collection all the Functions Worked
 
+console.log('Full Album Collection:' , Collection);// function worked in console. 6 albums added to array
+
+
+
 
 
