@@ -43,6 +43,11 @@ function showFullCollection (array) {
 };
 //End of creating Function showFullCollection 
 
+showFullCollection(Collection);
+
+//show Collection works with Artist and year Created but not album title
+
+
 
 
 
