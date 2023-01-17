@@ -63,7 +63,21 @@ console.log(findByArtist('Avant'));// tested artist in my collection
 console.log(findByArtist('Babyface'));// test artist is in my collection
 console.log(findByArtist('Lady Gaga'));// test artist that was not in my collection
 
+//tested find by artist function
 
+function search(artist, yearPublished){
+    let search = [showFullCollection];
+        for (let i = 0; i< Collection.length; i++){
+            if(artist, yearPublished === Collection[i.search]){
+                return search;
+
+            }
+
+        }
+
+    }
+
+console.log(search('Full Collection'));
 
 
 
