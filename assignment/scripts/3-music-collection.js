@@ -38,7 +38,7 @@ console.log('Full Album Collection:' , Collection);// function worked in console
 
 function showFullCollection (array) {
     for (let i=0; i< array.length; i++){
-        console.log(`${array[i].title} by ${array[i].artist}, publishes in ${array[i].yearPublished}`);
+        console.log(`${array[i].albumTitle} by ${array[i].artist}, publishes in ${array[i].yearPublished}`);
     }
 };
 //End of creating Function showFullCollection 
@@ -46,6 +46,22 @@ function showFullCollection (array) {
 showFullCollection(Collection);
 
 //show Collection works with Artist and year Created but not album title
+// Fixed the array now it shows the album title
+function findByArtist(artist){
+    let artistSeach = [];
+    for(let i = 0;i < Collection.length; i++){
+        if(artist === Collection[i].artist){
+            artistSeach.push(Collection[i])
+            return artistSeach;
+
+        }
+    }
+    return artistSeach;
+
+}// created find by artist function
+console.log(findByArtist('Avant'));// tested artist in my collection
+console.log(findByArtist('Babyface'));// test artist is in my collection
+console.log(findByArtist('Lady Gaga'));// test artist that was not in my collection
 
 
 
